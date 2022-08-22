@@ -1,0 +1,80 @@
+/*M.b.v. de devTools is gekeken hoe breed de orignele afbeelding is.
+Aan de zijkant van de daadwerkelijke afbeelding zit nog ruimte vandaar de minus.*/
+body {
+  background-color: #c3cfe2;
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-auto-columns: 642px;
+  grid-template-rows: 500px 0 250px;
+  /*M.b.v. de devTools is gekeken hoe hoog de orignele afbeelding is.
+    Vervolgens is gekeken hoe hoog de afzonderlijke delen zijn.*/
+  justify-items: center;
+}
+.wrapper .general {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: white;
+  color: #595959;
+  line-height: 3.5rem;
+  padding: 2rem 4.5rem 0rem 4.5rem;
+  -webkit-box-shadow: 0 0px 0px 0px #c3cfe2, 0 0px 0px 0px #c3cfe2, 4px 0 16px -6px #888888, -4px 0 16px -6px #888888;
+          box-shadow: 0 0px 0px 0px #c3cfe2, 0 0px 0px 0px #c3cfe2, 4px 0 16px -6px #888888, -4px 0 16px -6px #888888;
+}
+.wrapper img {
+  width: 15rem;
+  border: 0.8rem solid white;
+  border-radius: 50%;
+  -webkit-transform: translateY(-7.5rem) scale(0.7);
+          transform: translateY(-7.5rem) scale(0.7);
+}
+.wrapper .info {
+  background-color: #686de0;
+  width: 642px;
+  color: white;
+  padding-top: 7rem;
+  text-align: center;
+  line-height: 3rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  -webkit-box-shadow: 0 -10px 0px 0px white, 0 20px 16px -6px #888888, 4px 0 16px -6px #888888, -4px 0 16px -6px #888888;
+          box-shadow: 0 -10px 0px 0px white, 0 20px 16px -6px #888888, 4px 0 16px -6px #888888, -4px 0 16px -6px #888888;
+}
+.wrapper .info h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+}
+.wrapper .info p {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 960px) {
+  .part2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .part2 img {
+    zoom: 1.2;
+  }
+}/*# sourceMappingURL=style_part1.css.map */

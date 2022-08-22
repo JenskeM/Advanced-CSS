@@ -1,0 +1,236 @@
+.part3 {
+  margin: 5rem 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: end;
+}
+
+.fa {
+  display: grid;
+  padding: 1.1em 1em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 9em;
+  -webkit-transform: translateX(7em);
+          transform: translateX(7em);
+  -webkit-transition: transform 300ms;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.fa:hover {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+.fa-laptop-code {
+  background-color: #e17b77;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  height: 0.3em;
+  text-align: right;
+}
+.fa-laptop-code::after {
+  content: "Check out my blog";
+  font-size: 0.5em;
+  text-decoration: underline;
+  font-family: "Open Sans";
+  color: white;
+}
+.fa-laptop-code::before {
+  content: "\f5fc";
+  display: grid;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  justify-items: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  color: white;
+  height: 0.3em;
+  font-size: 0.875em;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  -webkit-transform: translateY(0.3em);
+          transform: translateY(0.3em);
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa-twitter {
+  background-color: #00aced;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  height: 0.3em;
+  text-align: right;
+}
+.fa-twitter::after {
+  content: "Follow me on Twitter";
+  font-size: 0.5em;
+  text-decoration: underline;
+  font-family: "Open Sans";
+  color: white;
+}
+.fa-twitter::before {
+  content: "\f099";
+  display: grid;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  justify-items: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  height: 0.3em;
+  font-size: 0.875em;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  -webkit-transform: translateY(0.3em);
+          transform: translateY(0.3em);
+}
+
+.fa-linkedin-in {
+  background-color: #007bb6;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  height: 0.3em;
+  text-align: right;
+}
+.fa-linkedin-in::after {
+  content: "Connect on Linkedin";
+  font-size: 0.5em;
+  text-decoration: underline;
+  font-family: "Open Sans";
+  color: white;
+}
+.fa-linkedin-in::before {
+  content: "\f0e1";
+  display: grid;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  justify-items: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  height: 0.3em;
+  font-size: 0.875em;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  -webkit-transform: translateY(0.3em);
+          transform: translateY(0.3em);
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  height: 0.3em;
+  text-align: right;
+}
+.fa-facebook-f::after {
+  content: "Like my Facebook page";
+  font-size: 0.5em;
+  text-decoration: underline;
+  font-family: "Open Sans";
+  color: white;
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+  display: grid;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  justify-items: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  height: 0.3em;
+  font-size: 0.875em;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  -webkit-transform: translateY(0.3em);
+          transform: translateY(0.3em);
+}
+
+.fa-github {
+  background-color: #333;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  height: 0.3em;
+  text-align: right;
+}
+.fa-github::after {
+  content: "See projects on Github";
+  font-size: 0.5em;
+  text-decoration: underline;
+  font-family: "Open Sans";
+  color: white;
+}
+.fa-github::before {
+  content: "\f09b";
+  display: grid;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  justify-items: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  height: 0.3em;
+  font-size: 0.875em;
+  -webkit-transition: transform 5000ms;
+  -webkit-transition: -webkit-transform 5000ms;
+  transition: -webkit-transform 5000ms;
+  transition: transform 5000ms;
+  transition: transform 5000ms, -webkit-transform 5000ms;
+  -webkit-transform: translateY(0.3em);
+          transform: translateY(0.3em);
+}/*# sourceMappingURL=style_part3.css.map */
