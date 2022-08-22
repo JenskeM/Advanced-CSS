@@ -1,0 +1,129 @@
+//PART3
+$height_button: 0.3em;
+
+@mixin hover_after($content-text) {
+  @include transition(transform 5000ms);
+  height: $height_button;
+  &::after {
+    content: $content-text;
+    font-size: 0.5em;
+    text-decoration: underline;
+    font-family: "Open Sans";
+    color: white;
+  }
+  text-align: right;
+}
+
+@mixin before_mixin($content-code, $weight) {
+  content: $content-code;
+  display: grid;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  justify-items: left;
+  align-content: center;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: $weight;
+  color: white;
+  height: $height_button;
+  font-size: 0.875em;
+  @include transition(transform 5000ms);
+  transform: translateY((0.6em/2));
+}
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+// @mixin transition-property($property...) {
+//   -moz-transition-property: $property;
+//   -o-transition-property: $property;
+//   -webkit-transition-property: $property;
+//   transition-property: $property;
+// }
+// @mixin transition-duration($duration...) {
+//   -moz-transition-property: $duration;
+//   -o-transition-property: $duration;
+//   -webkit-transition-property: $duration;
+//   transition-property: $duration;
+// }
+// @mixin transition-timing-function($timing...) {
+//   -moz-transition-timing-function: $timing;
+//   -o-transition-timing-function: $timing;
+//   -webkit-transition-timing-function: $timing;
+//   transition-timing-function: $timing;
+// }
+// @mixin transition-delay($delay...) {
+//   -moz-transition-delay: $delay;
+//   -o-transition-delay: $delay;
+//   -webkit-transition-delay: $delay;
+//   transition-delay: $delay;
+// }
+
+.part3 {
+  margin: 5rem 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: end;
+}
+
+.fa {
+  display: grid;
+  padding: 1.1em 1em;
+  align-content: center;
+  width: 9em;
+  transform: translateX(7em);
+  @include transition(transform 300ms);
+}
+
+.fa:hover {
+  transform: translateX(0em);
+}
+
+.fa-laptop-code {
+  background-color: #e17b77;
+  @include hover_after("Check out my blog");
+  &::before {
+    @include before_mixin("\f5fc", 900);
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+.fa-twitter {
+  background-color: #00aced;
+  @include hover_after("Follow me on Twitter");
+  &::before {
+    @include before_mixin("\f099", 400);
+  }
+}
+
+.fa-linkedin-in {
+  background-color: #007bb6;
+  @include hover_after("Connect on Linkedin");
+  &::before {
+    @include before_mixin("\f0e1", 400);
+  }
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+  @include hover_after("Like my Facebook page");
+  &::before {
+    @include before_mixin("\f39e", 400);
+  }
+}
+
+.fa-github {
+  background-color: #333;
+  @include hover_after("See projects on Github");
+  &::before {
+    @include before_mixin("\f09b", 400);
+  }
+}
